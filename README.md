@@ -7,8 +7,12 @@ gopherくんがterminalで新年を告げてくれます
 # command
 ```
 // 自分の環境で
-go run main.go
+$ go run main.go
 
-// docker上で
-docker-compose run --rm app go run main.go
+// Docker上で
+$ docker-compose run --rm app
+
+// Docker内で作業
+$ docker-compose run --rm app bash
 ```
+
