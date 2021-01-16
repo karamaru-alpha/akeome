@@ -1,8 +1,10 @@
 version: "3"
 services:
   app:
+    container_name: akeome-container
+    image: akeome-image
     build: .
-    command: go run main.go
     volumes:
       - .:/var/lib/app
-
+    tty: true
+    stdin_open: true

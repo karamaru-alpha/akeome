@@ -1,7 +1,6 @@
 FROM golang:latest
 
-ENV APP_ROOT /var/lib/app
-WORKDIR $APP_ROOT
+WORKDIR /var/lib/app
 
-#COPY . $APP_ROOT
-
+COPY . .
+RUN go mod download
